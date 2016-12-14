@@ -50,7 +50,10 @@ public class JDConfiguration {
         site.setTimeOut(30 * 1000);
 
         // use squid as proxy, you may add parent of proxies in squid
-//        site.setHttpProxy(new HttpHost("127.0.0.1", 3128));
+        site.setHttpProxy(new HttpHost("127.0.0.1", 3128));
+
+        site.setMaxConnPerRoute(1000);
+        site.setMaxConnTotal(1000);
 
         return site;
     }
@@ -78,45 +81,15 @@ public class JDConfiguration {
         return redisScheduler;
     }
 
-    @Bean
-    public CloseableHttpAsyncClient httpAsyncClient(Site site) {
-        // reactor config
-        IOReactorConfig reactorConfig = IOReactorConfig.custom()
-                .setConnectTimeout(site.getTimeOut())
-                .setSoTimeout(site.getTimeOut()).build();
-
-        HttpAsyncClientBuilder asyncClientBuilder = HttpAsyncClientBuilder.create();
-        asyncClientBuilder.setDefaultIOReactorConfig(reactorConfig);
-
-        asyncClientBuilder.setUserAgent(site.getUserAgent());
-
-        if (site.getHttpProxy() != null) {
-            asyncClientBuilder.setProxy(site.getHttpProxy());
-        }
-
-        asyncClientBuilder.setMaxConnPerRoute(1000).setMaxConnTotal(1000);
-
-        final CloseableHttpAsyncClient asyncClient = asyncClientBuilder.build();
-        asyncClient.start();
-
-        return asyncClient;
-    }
 
     @Bean
-    public Downloader downloader(CloseableHttpAsyncClient httpAsyncClient) {
-        return new HttpAsyncClientDownloader(httpAsyncClient);
-    }
-
-    @Bean
-    public Spider spider(Site site, Downloader downloader, Scheduler scheduler,
+    public Spider spider(Site site, Scheduler scheduler,
                          PageProcessor pageProcessor, Pipeline pipeline) {
         Spider spider = new Spider();
-        spider.setDownloader(downloader);
-        spider.setPageProcessor(pageProcessor);
         spider.setSite(site);
         spider.setScheduler(scheduler);
+        spider.setPageProcessor(pageProcessor);
         spider.setPipeline(pipeline);
-        spider.setMaxConcurrency(10);
         return spider;
     }
 }
