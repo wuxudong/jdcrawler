@@ -1,8 +1,8 @@
-package com.mrkid.ecommerce.jd.crawler;
+package com.mrkid.crawler.jd.crawler;
 
 import com.mrkid.crawler.Request;
-import com.mrkid.ecommerce.jd.dto.JDCategoryDTO;
-import com.mrkid.ecommerce.jd.utils.JDUtils;
+import com.mrkid.crawler.jd.dto.JDCategoryDTO;
+import com.mrkid.crawler.jd.utils.JDUtils;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.HashMap;

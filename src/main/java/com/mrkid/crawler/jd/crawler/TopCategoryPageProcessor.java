@@ -1,11 +1,11 @@
-package com.mrkid.ecommerce.jd.crawler;
+package com.mrkid.crawler.jd.crawler;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mrkid.crawler.Page;
 import com.mrkid.crawler.Request;
 import com.mrkid.crawler.processor.SubPageProcessor;
-import com.mrkid.ecommerce.jd.dto.JDCategoryDTO;
+import com.mrkid.crawler.jd.dto.JDCategoryDTO;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;

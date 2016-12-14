@@ -1,10 +1,10 @@
-package com.mrkid.ecommerce.jd.crawler;
+package com.mrkid.crawler.jd.crawler;
 
 import com.mrkid.crawler.Request;
 import com.mrkid.crawler.ResultItems;
+import com.mrkid.crawler.jd.dto.JDSkuDTO;
 import com.mrkid.crawler.pipeline.SubPipeline;
-import com.mrkid.ecommerce.jd.dto.JDSkuDTO;
-import com.mrkid.ecommerce.jd.facade.JDFacade;
+import com.mrkid.crawler.jd.facade.JDFacade;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

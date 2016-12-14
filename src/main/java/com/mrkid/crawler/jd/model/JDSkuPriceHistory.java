@@ -1,4 +1,4 @@
-package com.mrkid.ecommerce.jd.model;
+package com.mrkid.crawler.jd.model;
 
 import lombok.Data;
 

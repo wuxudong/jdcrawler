@@ -1,8 +1,8 @@
-package com.mrkid.ecommerce.jd;
+package com.mrkid.crawler.jd;
 
 import com.mrkid.crawler.Spider;
 import com.mrkid.crawler.scheduler.Scheduler;
-import com.mrkid.ecommerce.jd.crawler.RequestHelper;
+import com.mrkid.crawler.jd.crawler.RequestHelper;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;

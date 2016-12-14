@@ -1,6 +1,6 @@
-package com.mrkid.ecommerce.jd.repository;
+package com.mrkid.crawler.jd.repository;
 
-import com.mrkid.ecommerce.jd.model.JDSkuPriceHistory;
+import com.mrkid.crawler.jd.model.JDSkuPriceHistory;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

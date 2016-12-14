@@ -1,4 +1,4 @@
-package com.mrkid.ecommerce.jd.dto;
+package com.mrkid.crawler.jd.dto;
 
 import lombok.Data;
 

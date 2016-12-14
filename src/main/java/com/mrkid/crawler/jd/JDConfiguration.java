@@ -1,4 +1,4 @@
-package com.mrkid.ecommerce.jd;
+package com.mrkid.crawler.jd;
 
 import com.mrkid.crawler.Site;
 import com.mrkid.crawler.Spider;

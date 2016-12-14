@@ -1,6 +1,6 @@
-package com.mrkid.ecommerce.jd.repository;
+package com.mrkid.crawler.jd.repository;
 
-import com.mrkid.ecommerce.jd.model.JDCategory;
+import com.mrkid.crawler.jd.model.JDCategory;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

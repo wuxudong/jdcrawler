@@ -1,11 +1,11 @@
-package com.mrkid.ecommerce.jd.service;
+package com.mrkid.crawler.jd.service;
 
-import com.mrkid.ecommerce.jd.model.JDCategory;
-import com.mrkid.ecommerce.jd.model.JDSku;
-import com.mrkid.ecommerce.jd.model.JDSkuPriceHistory;
-import com.mrkid.ecommerce.jd.repository.JDCategoryRepository;
-import com.mrkid.ecommerce.jd.repository.JDSkuHistoryRepository;
-import com.mrkid.ecommerce.jd.repository.JDSkuRepository;
+import com.mrkid.crawler.jd.model.JDCategory;
+import com.mrkid.crawler.jd.model.JDSku;
+import com.mrkid.crawler.jd.model.JDSkuPriceHistory;
+import com.mrkid.crawler.jd.repository.JDCategoryRepository;
+import com.mrkid.crawler.jd.repository.JDSkuHistoryRepository;
+import com.mrkid.crawler.jd.repository.JDSkuRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;

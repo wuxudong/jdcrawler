@@ -1,6 +1,6 @@
-package com.mrkid.ecommerce.jd.repository;
+package com.mrkid.crawler.jd.repository;
 
-import com.mrkid.ecommerce.jd.model.JDSku;
+import com.mrkid.crawler.jd.model.JDSku;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

@@ -1,4 +1,4 @@
-package com.mrkid.ecommerce.jd.crawler;
+package com.mrkid.crawler.jd.crawler;
 
 /**
  * User: xudong

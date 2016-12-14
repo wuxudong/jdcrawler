@@ -1,10 +1,10 @@
-package com.mrkid.ecommerce.jd.facade;
+package com.mrkid.crawler.jd.facade;
 
-import com.mrkid.ecommerce.jd.dto.JDCategoryDTO;
-import com.mrkid.ecommerce.jd.dto.JDSkuDTO;
-import com.mrkid.ecommerce.jd.model.JDCategory;
-import com.mrkid.ecommerce.jd.model.JDSku;
-import com.mrkid.ecommerce.jd.service.JDService;
+import com.mrkid.crawler.jd.dto.JDCategoryDTO;
+import com.mrkid.crawler.jd.dto.JDSkuDTO;
+import com.mrkid.crawler.jd.model.JDCategory;
+import com.mrkid.crawler.jd.model.JDSku;
+import com.mrkid.crawler.jd.service.JDService;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

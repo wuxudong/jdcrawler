@@ -1,4 +1,4 @@
-package com.mrkid.ecommerce.jd.script;
+package com.mrkid.crawler.jd.script;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

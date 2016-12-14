@@ -1,4 +1,4 @@
-package com.mrkid.ecommerce.jd.utils;
+package com.mrkid.crawler.jd.utils;
 
 import com.google.common.collect.ImmutableMap;
 
